@@ -55,9 +55,10 @@ jobs:
           name: webpack artifacts
           path: public
       - name: Build container image
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v1
         with:
-          github-token: ${{secrets.PASSWORD}}
+          username: ${{github.actor}}
+          password: ${{secrets.PASSWORD}}
           registry: docker.pkg.github.com
           repository: glaloggia-lyit/devops-p8/tictactoe
           tag_with_sha: true
