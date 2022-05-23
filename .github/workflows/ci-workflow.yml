@@ -46,7 +46,7 @@ jobs:
     needs: test
     name: Docker build, tag, push
       
-      steps:
+    steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Download build artifact
