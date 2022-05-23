@@ -57,8 +57,7 @@ jobs:
       - name: Build container image
         uses: docker/build-push-action@v2
         with:
-          username: ${{github.actor}}
-          password: ${{secrets.PASSWORD}}
+          github-token: ${{secrets.PASSWORD}}
           registry: docker.pkg.github.com
           repository: glaloggia-lyit/devops-p8/tictactoe
           tag_with_sha: true
