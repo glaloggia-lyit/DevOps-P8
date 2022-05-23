@@ -60,5 +60,5 @@ jobs:
           username: ${{github.actor}}
           password: ${{secrets.GITHUB_TOKEN}}
           registry: docker.pkg.github.com
-          repository: glaloggia-lyit/devopsp8/tictactoe
+          repository: glaloggia-lyit/devops-p8/tictactoe
           tag_with_sha: true
